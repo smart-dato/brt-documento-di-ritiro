@@ -1,0 +1,19 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create(config('brt-documento-di-ritiro.allocator.table', 'brt_documento_di_ritiro'), function (Blueprint $table): void {
+            $table->increments('id');
+            $table->string('from');
+            $table->string('to');
+            $table->string('next')->nullable();
+            $table->timestamps();
+        });
+    }
+};

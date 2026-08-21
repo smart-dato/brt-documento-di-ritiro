@@ -1,0 +1,127 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Parameter \#1 \$width of method Intervention\\Image\\Image\:\:resize\(\) expects int\|null, float given\.$#'
+			identifier: argument.type
+			count: 3
+			path: src/Rendering/ColloLabelRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$height of method Intervention\\Image\\Image\:\:resize\(\) expects int\|null, float given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Rendering/ColloLabelRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$x of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Rendering/ColloLabelRenderer.php
+
+		-
+			message: '#^Parameter \#3 \$y of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Rendering/ColloLabelRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$x of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Rendering/CorrierePageRenderer.php
+
+		-
+			message: '#^Parameter \#1 \$width of method Intervention\\Image\\Image\:\:resize\(\) expects int\|null, float given\.$#'
+			identifier: argument.type
+			count: 5
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#1 \$x1 of method Intervention\\Image\\Image\:\:line\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 5
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#1 \$x1 of method Intervention\\Image\\Image\:\:rectangle\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 10
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$height of method Intervention\\Image\\Image\:\:resize\(\) expects int\|null, float given\.$#'
+			identifier: argument.type
+			count: 5
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$x of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 51
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$y1 of method Intervention\\Image\\Image\:\:line\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 5
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$y1 of method Intervention\\Image\\Image\:\:rectangle\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 10
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#3 \$x2 of method Intervention\\Image\\Image\:\:line\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 5
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#3 \$x2 of method Intervention\\Image\\Image\:\:rectangle\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 10
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#3 \$y of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 51
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#4 \$y2 of method Intervention\\Image\\Image\:\:line\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 5
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#4 \$y2 of method Intervention\\Image\\Image\:\:rectangle\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 10
+			path: src/Rendering/FormLayoutRenderer.php
+
+		-
+			message: '#^Parameter \#1 \$width of method Intervention\\Image\\Image\:\:resize\(\) expects int\|null, float given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Rendering/SegnacolloRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$height of method Intervention\\Image\\Image\:\:resize\(\) expects int\|null, float given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Rendering/SegnacolloRenderer.php
+
+		-
+			message: '#^Parameter \#2 \$x of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Rendering/SegnacolloRenderer.php
+
+		-
+			message: '#^Parameter \#3 \$y of method Intervention\\Image\\Image\:\:text\(\) expects int, float given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Rendering/SegnacolloRenderer.php
