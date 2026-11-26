@@ -21,3 +21,7 @@ updates:
       - "dependencies"
     cooldown:
       default-days: 1
+    ignore:
+      # The renderers use the v2 API (ImageManagerStatic); v3+ is a breaking rewrite.
+      - dependency-name: "intervention/image"
+        update-types: ["version-update:semver-major"]
