@@ -2,6 +2,11 @@
 
 All notable changes to `brt-documento-di-ritiro` will be documented in this file.
 
+## 0.0.2 - 2026-11-26
+
+- Dropped Laravel 11; requires Laravel 12 or 13.
+- Raised minimum dependency versions: `intervention/image` `^2.7`, `setasign/fpdf` `^1.8.5`. Intervention Image stays on v2, since the renderers use its v2 API.
+
 ## 0.0.1 - 2026-08-21
 
 Initial release, extracted from the OLC application.
