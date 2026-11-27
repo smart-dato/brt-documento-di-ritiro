@@ -2,19 +2,15 @@ name: run-tests
 
 on:
   push:
+    branches: [main]
     paths:
       - '**.php'
       - '.github/workflows/run-tests.yml'
       - 'phpunit.xml.dist'
       - 'composer.json'
       - 'composer.lock'
+  # No paths filter: `tests` is a required check on main and must report on every PR.
   pull_request:
-    paths:
-      - '**.php'
-      - '.github/workflows/run-tests.yml'
-      - 'phpunit.xml.dist'
-      - 'composer.json'
-      - 'composer.lock'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -65,3 +61,14 @@ jobs:
 
       - name: Execute tests
         run: vendor/bin/pest --ci
+
+  # Single required status check for main, independent of the matrix shape.
+  tests:
+    name: tests
+    if: always()
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Require every matrix job to pass
+        run: test "${{ needs.test.result }}" = success
